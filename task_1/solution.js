@@ -13,15 +13,16 @@ function addInCartMessage(title, price) {
     // добавьте в конец переменной message текст 'за'
     message = productName + ' ' + 'за';
     // добавьте в конец переменной message пробел
-    message = productName + ' ' + 'за' + ' ';
+    message = productName + ' ' + 'за'+' ';
     // добавьте в конец переменной message значение переменной productPrice
-    message = productName + ' ' + 'за' + ' ' + productPrice;
+    message = productName + ' ' + 'за'+' '+productPrice;
     // добавьте в конец переменной message пробел
-    message = productName + ' ' + 'за' + ' ' + productPrice + ' ';
+    message = productName + ' ' + 'за'+' '+productPrice+' ';
     // добавьте в конец переменной message текст 'теперь в корзине!'
-    message = productName + ' ' + 'за' + ' ' + productPrice + ' ' + 'теперь в корзине!';
+    message = productName + ' ' + 'за'+' '+productPrice+' '+'теперь в корзине!';
     // выведите переменную message в консоль
-    console.log(message);
+    console.log(message)
+
     // Конец решения задания №1.1.
 
     return message;
@@ -31,12 +32,14 @@ function addInCartCountChange(value) {
 
     // Задание №1.2. Увеличение количества в корзине
     let oldValue = value;
+
     // создайте переменную newValue
     let newValue;
     // присвойте ей значение oldValue
     newValue = oldValue;
     // увеличьте значение newValue на 1
     newValue = oldValue + 1;
+
     // Конец решения задания №1.2.
 
     return newValue;
@@ -49,12 +52,13 @@ function addInCartSumChange(sum, delta) {
     // Задание №1.3. Увеличение суммы в корзине
 
     // создайте переменную newSum и присвойте ей сумму oldSum и difference
-    let newSum = oldSum + difference;
+    let newSum = oldSum + difference
     // создайте переменную newSumText и присвойте ей результат склеивания переменной newSum и текста ' ₽'
-    let newSumText = newSum + ' ₽';
+    newSumText = newSum + ' ₽'
     // замените склеивание, используемое в newSum Text на шаблонную строку
-    newSumText = `${newSum} ₽`;
+    newSumText = = `${newSum} ₽`;
 
     // Конец решения задания №1.3.
 
     return newSumText;
+}
